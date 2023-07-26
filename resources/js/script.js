@@ -20,7 +20,7 @@ var suit2;
 var numberImg1;
 var numberImg2;
 
-for (i=1; i<6; i++) {  //should be 14
+for (i=1; i<14; i++) {  //should be 14
     for (k=1; k<5; k++) {
         var j = [i,k];
         cards.push(j);
