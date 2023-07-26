@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+  <head>
+   <meta charset = "utf-8">
+   <title>War!</title>
+   <link href="./resources/css/reset.css" rel="stylesheet" type="text/css"/>
+   <link href = "./resources/css/style.css" rel = "stylesheet" type = "text/css" />
+   <script src="https://kit.fontawesome.com/3a5da632ae.js" crossorigin="anonymous"></script>
+   <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/backofcard.ico"/>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="practice" style="font-size: 2rem;"></div>
+    <div id="gameboard" class="flex">
+        <div class="flexcolumn">
+            <h1>War!</h1>
+            <h3 id="winner"></h3>
+            <div id="end">
+              <h3>First player has <span id="player1Count"></span> cards.</h3>
+              <h3>Second player has <span id="player2Count"></span> cards.</h3>
+            </div>  
+        </div>
+        <div class="players">
+        <div id="flex">
+           <div id="firstPlayer"  class="flexcolumn player">
+            <h2>First Player</h2>
+            <div id="firstPlayerNumber" class="number">
+              <!--<img src="./resources/images/backofcards.jpg"/>-->
+            </div>
+            <div id="firstPlayerSuit" class="suit1">
+        </div>
+    </div>
+    <h2 id="draw">Draw</h2>
+    <div id="flex">
+        <div id="secondPlayer"  class="flexcolumn player">
+         <h2>Second Player</h2>
+         <!--<img src="./resources/images/backofcards.jpg"/>-->
+         <div id="secondPlayerNumber" class="number">
+         </div>
+         <div id="secondPlayerSuit" class="suit2">
+     </div>
+ </div>
+ </div>
+    </div>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./resources/js/script.js"></script> 
+  </body>
+</html>
