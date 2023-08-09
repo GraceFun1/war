@@ -36,7 +36,6 @@ h3 {
 }
 
 #draw {
-    border: solid 2px black;
     width: 8rem;
     height: 2.5rem;
     text-align: center;
@@ -100,30 +99,30 @@ h3 {
     text-align: center;
 }
 
-#firstPlayer {
+#player {
     margin-right: 3rem;
 }
 
-#secondPlayer {
+#computer {
     margin-left: 3rem;
 }
 
-#firstPlayerNumber {
+#playerNumber {
     float: top;
     font-size: 3rem;
 }
 
-#secondPlayerMumber {
+#computerNumber {
     float: top;
     font-size: 3rem;
 }
 
-#firstPlayer img {
+#player img {
     width: 25%;
     flex-wrap: wrap;
 }
 
-#secondPlayer img {
+#computer img {
     width: 25%;
     flex-wrap: wrap;
 }
@@ -136,4 +135,55 @@ h3 {
         margin: 1rem;
         width: 90%;
     }
+}
+
+input {
+    margin: .5rem;
+    font-size: 2rem;
+    padding: .5px;
+    width: 8rem;
+}
+
+#submit {
+    padding: .5rem;
+    margin: .5rem;
+    width: 8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.button:hover {
+    color: #04AA6D;
+    cursor: pointer;
+}
+
+span {
+    margin-left: 1rem;
+}
+
+button {
+    background-color: #04AA6D;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.winner {
+    flex-grow: 1;
+}
+
+#mathOptions {
+    width: 16%;
+}
+
+#directions {
+    text-align: center;
 }

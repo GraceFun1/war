@@ -17,32 +17,52 @@
             <h1>War!</h1>
             <h3 id="winner"></h3>
             <div id="end">
-              <h3>First player has <span id="player1Count"></span> cards.</h3>
-              <h3>Second player has <span id="player2Count"></span> cards.</h3>
+              <h3>Player has <span id="playerCount"></span> cards.</h3>
+              <h3>Computer has <span id="computerCount"></span> cards.</h3>
             </div>  
+            <div>
+              <h2 id="mathOptions" class="button">Math Options?</h2>
+                <div id="options" class="hidden">
+                 <button id="compare">Compare</button><button id="arithmetic">Arithmetic</button>
+                </div>
+              <h2 id="math" class="hidden"><span id="add" class="button">ADD</span><span id="multiply" class="button">MULTIPLY</span><span id="subtract" class="button">SUBTRACT</span>
+              <h2 id="integers" class="hidden" style="margin-left:1rem;">Integers?<span id="yes" class="button">YES</span><span id="no" class="button">NO</span>  
         </div>
-        <div class="players">
+        <!--<div class="players"> -->
         <div id="flex">
-           <div id="firstPlayer"  class="flexcolumn player">
-            <h2>First Player</h2>
-            <div id="firstPlayerNumber" class="number">
-              <!--<img src="./resources/images/backofcards.jpg"/>-->
+           <div id="player"  class="flexcolumn player">
+            <h2>Player</h2>
+            <div id="playerNumber" class="number">
             </div>
-            <div id="firstPlayerSuit" class="suit1">
+            <div id="playerSuit" class="suit flex">
         </div>
-    </div>
+        <h2 id="one" class="button hidden">Winner</h2>
+       </div>
+       <div class="flexcolumn">
+    <p id="compareDirections" id = "directions" class="hidden">Choose wich player has the card that shows the greater amount.</p>
+    <p id="addDirections" id = "directions" class="hidden">Add the card amounts together.</p>
+    <p id="multiplyDirections" id = "directions" class="hidden">Multiply the card amounts together.</p>
+    <p id="subtractDirections" id = "directions" class="hidden">Player One's card minus Player Two's card.</p>
+    <p id="integerDirections" id = "directions" class="hidden">Black is positive. Red is negative.</p>
+
+        <input class="hidden" id="playerAnswer" type="number" align ="right" size="6">
+        <button class="hidden" id="submit">Check</button>
+
     <h2 id="draw">Draw</h2>
+    </div>
+    <input class="hidden" value="answer"></input>
     <div id="flex">
-        <div id="secondPlayer"  class="flexcolumn player">
-         <h2>Second Player</h2>
-         <!--<img src="./resources/images/backofcards.jpg"/>-->
-         <div id="secondPlayerNumber" class="number">
+        <div id="computer"  class="flexcolumn player">
+         <h2>Computer</h2>
+         <div id="computerNumber" class="number">
          </div>
-         <div id="secondPlayerSuit" class="suit2">
+         <div id="computerSuit" class="suit flex">
      </div>
+     <h2 id="two" class="button hidden">Winner</h2>
  </div>
  </div>
     </div>
+  </div>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./resources/js/script.js"></script> 
   </body>
