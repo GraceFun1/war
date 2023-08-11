@@ -11,17 +11,21 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <div class="playerName">
+      <input value="Player" id="playername" type="text" align = "right"  size="6">
+      <button id="enter">Submit</button>
+    </div>
     <div id="practice" style="font-size: 2rem;"></div>
     <div id="gameboard" class="flex">
         <div class="flexcolumn">
-            <h1>War!</h1>
+            <h1 class="hidden2">War!</h1>
             <h3 id="winner"></h3>
             <div id="end">
-              <h3>Player has <span id="playerCount"></span> cards.</h3>
-              <h3>Computer has <span id="computerCount"></span> cards.</h3>
+              <h3 class="hidden2"><span id="nameOfPlayer"></span> has <span id="playerCount"></span> cards.</h3>
+              <h3 class="hidden2">Computer has <span id="computerCount"></span> cards.</h3>
             </div>  
             <div>
-              <h2 id="mathOptions" class="button">Math Options?</h2>
+              <h2 class="hidden2" id="mathOptions" class="button">Math Options?</h2>
                 <div id="options" class="hidden">
                  <button id="compare">Compare</button><button id="arithmetic">Arithmetic</button>
                 </div>
@@ -30,14 +34,14 @@
         </div>
         <!--<div class="players"> -->
         <div id="flex">
-           <div id="player"  class="flexcolumn player">
-            <h2>Player</h2>
-            <div id="playerNumber" class="number">
+           <div class="hidden3" id="player"  class="flexcolumn player">
+            <h2 class="hidden2"id="namePlayer"></h2>
+            <div class="hidden4" id="playerNumber" class="number">
             </div>
-            <div id="playerSuit" class="suit flex">
+            <div class="hidden4" id="playerSuit" class="suit flex">
         </div>
         <h2 id="one" class="button hidden">Winner</h2>
-       </div>
+      </div>
        <div class="flexcolumn">
     <p id="compareDirections" id = "directions" class="hidden">Choose wich player has the card that shows the greater amount.</p>
     <p id="addDirections" id = "directions" class="hidden">Add the card amounts together.</p>
@@ -48,15 +52,15 @@
         <input class="hidden" id="playerAnswer" type="number" align ="right" size="6">
         <button class="hidden" id="submit">Check</button>
 
-    <h2 id="draw">Draw</h2>
+    <h2 class="hidden2" id="draw">Draw</h2>
     </div>
     <input class="hidden" value="answer"></input>
     <div id="flex">
-        <div id="computer"  class="flexcolumn player">
-         <h2>Computer</h2>
-         <div id="computerNumber" class="number">
+        <div class="hidden3" id="computer"  class="flexcolumn player">
+         <h2 class="hidden2">Computer</h2>
+         <div class="hidden4" id="computerNumber" class="number">
          </div>
-         <div id="computerSuit" class="suit flex">
+         <div class="hidden4" id="computerSuit" class="suit flex">
      </div>
      <h2 id="two" class="button hidden">Winner</h2>
  </div>

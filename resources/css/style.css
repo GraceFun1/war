@@ -182,8 +182,39 @@ p {
 
 #mathOptions {
     width: 16%;
+    cursor: pointer;
+}
+
+#mathOptions:hover {
+    color: #04AA6D;
 }
 
 #directions {
     text-align: center;
+}
+
+.hidden2 {
+    display: none;
+}
+
+.playerName {
+    display: block;
+    text-align: center;
+    justify-self: center;
+}
+#compare {
+    cursor: pointer;
+}
+
+#arithmetic {
+    cursor: pointer;
+}
+
+#enter {
+    cursor: pointer;
+}
+
+#nameOfPlayer {
+    font-size: 1.5rem;
+    font-weight: 400;
 }

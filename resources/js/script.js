@@ -18,6 +18,8 @@ $(document).ready(function() {
     var $computerCount = $("#computerCount");
     var $playerAnswer = $("#playerAnswer");
     var $submit = $("#submit");
+    var $playerName = $("#playerName");
+    var $enter = $(".enter");
     var number1;
     var number2;
     var suit1;
@@ -32,9 +34,13 @@ $(document).ready(function() {
     var multiplication = 0;
     var subtraction = 0;
     var arithmetic = 0;
-    
-        var audio1 = new Audio('ting.mp3');
-        var audio2 = new Audio('chime.mp3');
+        
+    document.getElementById("enter").onclick = function() {
+      var playerName = document.getElementById("playername").value;
+      console.log(playerName);
+      $('#nameOfPlayer').html(playerName);
+      $('#namePlayer').html(playerName);
+    }
     
     var audio = new Audio('card.mp3');
     
@@ -324,7 +330,7 @@ $(document).ready(function() {
              for (i=0; i<playedCards.length; i++) {
                player.push(playedCards[i]);
              }
-             $winner.html("Player Wins Round");
+             $winner.html("PLayer Wins Round");
              $winner.css("color", "green");
              $player.css("border-color", "green")
              $player.css("color", "green");
@@ -364,6 +370,7 @@ $(document).ready(function() {
       }
     
       if (number1 > number2) {
+
           $winner.html("Player Wins Round");
           $winner.css("color", "green");
           $player.css("border-color", "green");
@@ -455,3 +462,12 @@ $(document).ready(function() {
     
     
     }); //closes document ready
+
+    $("#enter").on('click', function() {
+      $(".hidden2").css("display", "block");
+      $(".hidden3").css("border", "solid 1px black");
+      $(".hidden3").css("width", "15rem");
+      $(".hidden3").css("height", "25.1rem");
+      $(".hidden3").css("text-align", "center");
+      $(".playerName").css("display", "none");
+    });
